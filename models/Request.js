@@ -1,3 +1,4 @@
+//Import for MongoDB
 var mongoose = require('mongoose');
 
 
@@ -5,7 +6,7 @@ var mongoose = require('mongoose');
 var RequestSchema = mongoose.Schema({
 	username: {
 		type: String,
-    index:  true
+    index:true
 	},
 	request: {
 		type: String
@@ -25,6 +26,7 @@ var RequestSchema = mongoose.Schema({
 	}
 });
 
+//To request for Schema
 var Request = module.exports = mongoose.model('Request', RequestSchema);
 
 
